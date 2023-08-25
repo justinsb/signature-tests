@@ -25,4 +25,4 @@ jobs:
       #    cosign sign-blob --yes README.md
       - name: Attest blob
         run: |
-          cosign attest-blob --yes --predicate k8s-sbom SHA256SUMS
+          cosign attest-blob --yes --predicate attestation attestation

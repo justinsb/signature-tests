@@ -1,0 +1,4 @@
+CanonicalLocation: https://dl.k8s.io/release/v1.28.0/
+HashFile: SHA256: 297eebff1ed7f8c0e91fc3db903b6fad41c63416e2878b5355ea7cc2633751fb
+Version: 1.28.0
+CPE: cpe:2.3: cpe:2.3:a:kubernetes:kubernetes:1.28.0
