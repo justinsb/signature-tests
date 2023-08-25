@@ -1,0 +1,21 @@
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  build:
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: sigstore/cosign-installer@main
+
+      - name: Hash readme
+        run: |
+          sha256sum README.md
+
+      - name: Sign container image
+        run: |
+          cosign sign-blob README.md
