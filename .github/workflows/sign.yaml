@@ -22,4 +22,4 @@ jobs:
 
       - name: Sign container image
         run: |
-          cosign sign-blob README.md
+          cosign sign-blob --yes README.md
