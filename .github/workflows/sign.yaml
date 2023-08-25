@@ -25,4 +25,4 @@ jobs:
       #    cosign sign-blob --yes README.md
       - name: Attest blob
         run: |
-          cosign attest-blob --yes --predicate README.md README.md
+          cosign attest-blob --yes --predicate k8s-sbom README.md
