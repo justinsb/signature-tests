@@ -20,6 +20,9 @@ jobs:
         run: |
           sha256sum README.md
 
-      - name: Sign container image
+      #- name: Sign blob
+      #  run: |
+      #    cosign sign-blob --yes README.md
+      - name: Attest blob
         run: |
-          cosign sign-blob --yes README.md
+          cosign attest-blob --predicate README.md
