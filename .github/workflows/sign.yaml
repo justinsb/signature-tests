@@ -13,6 +13,9 @@ jobs:
     steps:
       - uses: sigstore/cosign-installer@main
 
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - name: Hash readme
         run: |
           sha256sum README.md
